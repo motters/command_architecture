@@ -6,7 +6,27 @@
 
 #IncludeRegexTransform: 
 
+/Users/sammottley/Development/Embedded/command_architecture/Interfaces/Interface.h
+
+/Users/sammottley/Development/Embedded/command_architecture/Interfaces/LoRa.h
+vector
+-
+Interface.h
+/Users/sammottley/Development/Embedded/command_architecture/Interfaces/Interface.h
+
+/Users/sammottley/Development/Embedded/command_architecture/Interfaces/Serial.h
+vector
+-
+Interface.h
+/Users/sammottley/Development/Embedded/command_architecture/Interfaces/Interface.h
+
 /Users/sammottley/Development/Embedded/command_architecture/main.cpp
 iostream
 -
+vector
+-
+Interfaces/LoRa.h
+/Users/sammottley/Development/Embedded/command_architecture/Interfaces/LoRa.h
+Interfaces/Serial.h
+/Users/sammottley/Development/Embedded/command_architecture/Interfaces/Serial.h
 

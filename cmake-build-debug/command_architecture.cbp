@@ -98,10 +98,10 @@
 		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Guards/HasCredit.h">
 			<Option target="command_architecture"/>
 		</Unit>
-		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Guards/IsLocked.h">
+		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Guards/NotLocked.h">
 			<Option target="command_architecture"/>
 		</Unit>
-		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Guards/IsSealed.h">
+		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Guards/NotSealed.h">
 			<Option target="command_architecture"/>
 		</Unit>
 		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Interfaces/Interface.h">

@@ -23,7 +23,7 @@ namespace Interfaces
              */
             virtual bool handle(std::vector<char> input)
             {
-
+                return true;
             };
     };
 }
