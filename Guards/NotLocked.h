@@ -4,11 +4,11 @@
 
 namespace Guards
 {
-    class IsLocked : Guard
+    class NotLocked : Guard
     {
         public:
 
-            IsLocked()
+            NotLocked()
             {
 
             }

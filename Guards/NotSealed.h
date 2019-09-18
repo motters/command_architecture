@@ -4,11 +4,11 @@
 
 namespace Guards
 {
-    class IsSealed : Guard
+    class NotSealed : Guard
     {
         public:
 
-            IsSealed()
+            NotSealed()
             {
 
             }
