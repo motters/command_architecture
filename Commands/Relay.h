@@ -1,5 +1,7 @@
 #pragma once
 
+#include <iostream>
+
 #include "Command.h"
 
 namespace Commands
@@ -10,6 +12,16 @@ namespace Commands
             Relay()
             {
 
+            }
+
+            bool on()
+            {
+                std::cout << "Turning relay on" << std::endl;;
+            }
+
+            bool off()
+            {
+                std::cout << "Turning relay off" << std::endl;;
             }
 
     };

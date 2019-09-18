@@ -1,5 +1,7 @@
 #pragma once
 
+#include <iostream>
+
 #include "Validator.h"
 
 namespace Validators
@@ -12,7 +14,7 @@ namespace Validators
             {
 
             }
-    
+
             virtual bool validate()
             {
                 return true;

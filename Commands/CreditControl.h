@@ -1,5 +1,7 @@
 #pragma once
 
+#include <iostream>
+
 #include "Command.h"
 
 namespace Commands
@@ -10,6 +12,17 @@ namespace Commands
             CreditControl()
             {
 
+            }
+
+
+            bool enable()
+            {
+                std::cout << "Credit control enabled";
+            }
+
+            bool addCredit(uint32_t amount)
+            {
+                std::cout << "Adding credit: " << amount << std::endl;
             }
 
     };

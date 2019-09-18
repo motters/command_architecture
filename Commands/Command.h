@@ -6,6 +6,7 @@ namespace Commands
     class Command
     {
         public:
+
             Command()
             {
 
