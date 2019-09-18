@@ -1,8 +1,22 @@
-//
-// Created by sam mottley on 2019-09-18.
-//
+#pragma once
 
-#ifndef COMMAND_ARCHITECTURE_LENGTH_H
-#define COMMAND_ARCHITECTURE_LENGTH_H
+#include "Validator.h"
 
-#endif //COMMAND_ARCHITECTURE_LENGTH_H
+namespace Validators
+{
+    class Length : Validator
+    {
+        public:
+
+            Length()
+            {
+
+            }
+
+            virtual bool validate()
+            {
+                return true;
+            };
+
+    };
+}

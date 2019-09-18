@@ -1,8 +1,16 @@
-//
-// Created by sam mottley on 2019-09-18.
-//
+#pragma once
 
-#ifndef COMMAND_ARCHITECTURE_CALIBRATION_H
-#define COMMAND_ARCHITECTURE_CALIBRATION_H
+#include "Command.h"
 
-#endif //COMMAND_ARCHITECTURE_CALIBRATION_H
+namespace Commands
+{
+    class Calibration : Command
+    {
+        public:
+            Calibration()
+            {
+
+            }
+
+    };
+}

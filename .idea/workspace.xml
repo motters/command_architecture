@@ -12,17 +12,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e557b55a-f4d0-41b8-9d23-182d820dc3aa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Commands/Calibration.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Commands/Command.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Commands/CreditControl.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Commands/Relay.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Guards/Credit.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Guards/Locked.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interfaces/LoRa.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interfaces/Serial.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Validators/Contains.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Validators/Length.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Validators/Range.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/sammottley.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Guards/HasCredit.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commands/Calibration.h" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/Calibration.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commands/Command.h" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/Command.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commands/CreditControl.h" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/CreditControl.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Commands/Relay.h" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/Relay.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Guards/Credit.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Guards/Guard.h" beforeDir="false" afterPath="$PROJECT_DIR$/Guards/Guard.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Guards/Locked.h" beforeDir="false" afterPath="$PROJECT_DIR$/Guards/IsLocked.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Guards/Sealed.h" beforeDir="false" afterPath="$PROJECT_DIR$/Guards/IsSealed.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interfaces/Interface.h" beforeDir="false" afterPath="$PROJECT_DIR$/Interfaces/Interface.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interfaces/LoRa.h" beforeDir="false" afterPath="$PROJECT_DIR$/Interfaces/LoRa.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interfaces/Serial.h" beforeDir="false" afterPath="$PROJECT_DIR$/Interfaces/Serial.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validators/Contains.h" beforeDir="false" afterPath="$PROJECT_DIR$/Validators/Contains.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validators/Length.h" beforeDir="false" afterPath="$PROJECT_DIR$/Validators/Length.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validators/Range.h" beforeDir="false" afterPath="$PROJECT_DIR$/Validators/Range.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Validators/Validator.h" beforeDir="false" afterPath="$PROJECT_DIR$/Validators/Validator.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,55 +46,100 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Commands/CreditControl.h">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/Interfaces/Interface.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="45" />
+              <folding>
+                <element signature="e#63#75#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Commands/Relay.h">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/Validators/Validator.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="19" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="19" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Validators/Range.h">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Validators/Contains.h">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Validators/Length.h">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Guards/Sealed.h">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Guards/Locked.h">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Guards/Credit.h">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/Interfaces/LoRa.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="32" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="32" />
+              <folding>
+                <element signature="e#14#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Interfaces/Serial.h">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+              <folding>
+                <element signature="e#14#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Guards/IsLocked.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="6" selection-end-line="20" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Guards/IsSealed.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="18" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Commands/Relay.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="13" selection-end-line="15" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Validators/Contains.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="5" lean-forward="true" selection-end-line="20" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Validators/Length.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="18" selection-end-line="21" selection-end-column="1" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Interfaces/LoRa.h">
+        <entry file="file://$PROJECT_DIR$/Validators/Range.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="210">
+              <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -100,16 +153,22 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/main.cpp" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/command_architecture.iml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/Commands/Command.h" />
+        <option value="$PROJECT_DIR$/Commands/Relay.h" />
+        <option value="$PROJECT_DIR$/Commands/CreditControl.h" />
+        <option value="$PROJECT_DIR$/Commands/Calibration.h" />
+        <option value="$PROJECT_DIR$/Interfaces/Interface.h" />
+        <option value="$PROJECT_DIR$/Validators/Validator.h" />
+        <option value="$PROJECT_DIR$/Interfaces/LoRa.h" />
+        <option value="$PROJECT_DIR$/Interfaces/Serial.h" />
+        <option value="$PROJECT_DIR$/Guards/Credit.h" />
+        <option value="$PROJECT_DIR$/Guards/HasCredit.h" />
+        <option value="$PROJECT_DIR$/Guards/IsLocked.h" />
+        <option value="$PROJECT_DIR$/Guards/IsSealed.h" />
+        <option value="$PROJECT_DIR$/Guards/Guard.h" />
+        <option value="$PROJECT_DIR$/Validators/Contains.h" />
+        <option value="$PROJECT_DIR$/Validators/Length.h" />
+        <option value="$PROJECT_DIR$/Validators/Range.h" />
       </list>
     </option>
   </component>
@@ -199,12 +258,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1568807818548</updated>
-      <workItem from="1568807822501" duration="358000" />
+      <workItem from="1568807822501" duration="1564000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="358000" />
+    <option name="totallyTimeSpent" value="1564000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="23" width="1400" height="837" extended-state="0" />
@@ -238,12 +297,6 @@
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Commands/Command.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Commands/Calibration.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -251,37 +304,117 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Commands/Calibration.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Commands/Command.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="13" lean-forward="true" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Commands/CreditControl.h">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="13" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Commands/Relay.h">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/Guards/Guard.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Validators/Range.h">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/Guards/HasCredit.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="28" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Validators/Contains.h">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/Guards/IsLocked.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="6" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Validators/Length.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Guards/Sealed.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Guards/Locked.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Guards/Credit.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Interfaces/Serial.h">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/Interfaces/Interface.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="45" />
+          <folding>
+            <element signature="e#63#75#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Interfaces/LoRa.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="270">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="32" />
+          <folding>
+            <element signature="e#14#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Commands/Relay.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="13" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Interfaces/Serial.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding>
+            <element signature="e#14#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Guards/IsSealed.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="18" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Validators/Validator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Validators/Contains.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="5" lean-forward="true" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Validators/Length.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="18" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Validators/Range.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
         </state>
       </provider>
     </entry>

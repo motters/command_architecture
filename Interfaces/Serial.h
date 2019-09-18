@@ -1,8 +1,29 @@
-//
-// Created by sam mottley on 2019-09-18.
-//
+#pragma once
 
-#ifndef COMMAND_ARCHITECTURE_SERIAL_H
-#define COMMAND_ARCHITECTURE_SERIAL_H
+#include <vector>
 
-#endif //COMMAND_ARCHITECTURE_SERIAL_H
+#include "Interface.h"
+
+namespace Interfaces
+{
+    class Serial : Interface<std::vector<char>>
+    {
+        public:
+
+            Serial()
+            {
+
+            }
+
+            /**
+             * Handles incomming serial data
+             *
+             * @param input
+             * @return
+             */
+            virtual bool handle(std::vector<char> input)
+            {
+
+            };
+    };
+}

@@ -1,8 +1,29 @@
-//
-// Created by sam mottley on 2019-09-18.
-//
+#pragma once
 
-#ifndef COMMAND_ARCHITECTURE_LORA_H
-#define COMMAND_ARCHITECTURE_LORA_H
+#include <vector>
 
-#endif //COMMAND_ARCHITECTURE_LORA_H
+#include "Interface.h"
+
+namespace Interfaces
+{
+    class LoRa : Interface<std::vector<uint8_t>>
+    {
+        public:
+
+            LoRa()
+            {
+
+            }
+
+            /**
+             * Handles incomming LoRa data
+             *
+             * @param input
+             * @return
+             */
+            virtual bool handle(std::vector<uint8_t > input)
+            {
+
+            };
+    };
+}

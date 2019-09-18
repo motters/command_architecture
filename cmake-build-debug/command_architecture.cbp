@@ -92,16 +92,16 @@
 		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Commands/Relay.h">
 			<Option target="command_architecture"/>
 		</Unit>
-		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Guards/Credit.h">
-			<Option target="command_architecture"/>
-		</Unit>
 		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Guards/Guard.h">
 			<Option target="command_architecture"/>
 		</Unit>
-		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Guards/Locked.h">
+		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Guards/HasCredit.h">
 			<Option target="command_architecture"/>
 		</Unit>
-		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Guards/Sealed.h">
+		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Guards/IsLocked.h">
+			<Option target="command_architecture"/>
+		</Unit>
+		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Guards/IsSealed.h">
 			<Option target="command_architecture"/>
 		</Unit>
 		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Interfaces/Interface.h">

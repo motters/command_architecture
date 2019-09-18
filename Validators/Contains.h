@@ -1,8 +1,21 @@
-//
-// Created by sam mottley on 2019-09-18.
-//
+#pragma once
 
-#ifndef COMMAND_ARCHITECTURE_CONTAINS_H
-#define COMMAND_ARCHITECTURE_CONTAINS_H
+#include "Validator.h"
 
-#endif //COMMAND_ARCHITECTURE_CONTAINS_H
+namespace Validators
+{
+    class Contains : Validator
+    {
+        public:
+            Contains()
+            {
+
+            }
+
+            virtual bool validate()
+            {
+                return true;
+            };
+
+    };
+}

@@ -1,8 +1,17 @@
-//
-// Created by sam mottley on 2019-09-18.
-//
+#pragma once
 
-#ifndef COMMAND_ARCHITECTURE_INTERFACE_H
-#define COMMAND_ARCHITECTURE_INTERFACE_H
 
-#endif //COMMAND_ARCHITECTURE_INTERFACE_H
+namespace Interfaces
+{
+    template <typename T>
+    class Interface
+    {
+        public:
+            Interface()
+            {
+
+            }
+
+            virtual bool handle(T input) = 0;
+    };
+}

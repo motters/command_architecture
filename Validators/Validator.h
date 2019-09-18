@@ -1,8 +1,16 @@
-//
-// Created by sam mottley on 2019-09-18.
-//
+#pragma once
 
-#ifndef COMMAND_ARCHITECTURE_VALIDATOR_H
-#define COMMAND_ARCHITECTURE_VALIDATOR_H
 
-#endif //COMMAND_ARCHITECTURE_VALIDATOR_H
+namespace Validators
+{
+    class Validator
+    {
+    public:
+        Validator()
+        {
+
+        }
+
+        virtual bool validate() = 0;
+    };
+}

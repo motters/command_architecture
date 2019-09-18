@@ -1,22 +1,21 @@
 #pragma once
 
-#include "Validator.h"
+#include "Guard.h"
 
-namespace Validators
+namespace Guards
 {
-    class Range : Validator
+    class IsSealed : Guard
     {
         public:
 
-            Range()
+            IsSealed()
             {
 
             }
-    
+
             virtual bool validate()
             {
                 return true;
             };
-
     };
 }
