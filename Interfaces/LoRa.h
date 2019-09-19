@@ -1,9 +1,7 @@
 #pragma once
 
 #include <vector>
-#include <map>
 #include <string>
-#include <any>
 
 #include "Interface.h"
 
@@ -44,7 +42,8 @@ namespace Interfaces
                 if(input.size() < 1)
                     return contract;
 
-                std::vector < std::any > result;
+                // Mark interface
+                contract.interface = Commands::Contract::AvailableInterfaces::LoRa;
 
                 // Find the correct command
                 switch(static_cast<Functions>(input.at(0)))

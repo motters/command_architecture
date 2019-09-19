@@ -37,11 +37,7 @@ any
 /Users/sammottley/Development/Embedded/command_architecture/Interfaces/LoRa.h
 vector
 -
-map
--
 string
--
-any
 -
 Interface.h
 /Users/sammottley/Development/Embedded/command_architecture/Interfaces/Interface.h
@@ -55,6 +51,14 @@ vector
 -
 Interface.h
 /Users/sammottley/Development/Embedded/command_architecture/Interfaces/Interface.h
+../Validators/Contains.h
+/Users/sammottley/Development/Embedded/command_architecture/Validators/Contains.h
+
+/Users/sammottley/Development/Embedded/command_architecture/Validators/Contains.h
+string
+-
+Validator.h
+/Users/sammottley/Development/Embedded/command_architecture/Validators/Validator.h
 
 /Users/sammottley/Development/Embedded/command_architecture/Validators/Length.h
 string

@@ -25,7 +25,7 @@ int main()
     std::cout << "Command Architecture Demo" << std::endl;
 
     loRaTask();
-    //serialTask();
+    serialTask();
 
     return 0;
 }
@@ -68,5 +68,17 @@ void serialTask()
     Interfaces::Serial serial;
 
     // Get command contract
-    auto state = serial.handle(seriaData);
+    auto contract = serial.handle(seriaData);
+
+    // Demo
+    if(contract.status && contract.validLength)
+    {
+        std::cout << "Sent: " << seriaData << std::endl <<
+                     "Command: " << std::any_cast < std::string >(contract.params[0]) <<
+                     " Param 1: " << std::any_cast < int >(contract.params[1]) << std::endl;
+    }
+    else
+    {
+        std::cout << "Invalid data" << std::endl;
+    }
 }

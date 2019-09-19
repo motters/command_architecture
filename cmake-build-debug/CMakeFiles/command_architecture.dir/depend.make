@@ -7,6 +7,7 @@ CMakeFiles/command_architecture.dir/main.cpp.o: ../Commands/Contract.h
 CMakeFiles/command_architecture.dir/main.cpp.o: ../Interfaces/Interface.h
 CMakeFiles/command_architecture.dir/main.cpp.o: ../Interfaces/LoRa.h
 CMakeFiles/command_architecture.dir/main.cpp.o: ../Interfaces/Serial.h
+CMakeFiles/command_architecture.dir/main.cpp.o: ../Validators/Contains.h
 CMakeFiles/command_architecture.dir/main.cpp.o: ../Validators/Length.h
 CMakeFiles/command_architecture.dir/main.cpp.o: ../Validators/Validator.h
 CMakeFiles/command_architecture.dir/main.cpp.o: ../main.cpp

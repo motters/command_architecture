@@ -8,6 +8,7 @@ CMakeFiles/command_architecture.dir/main.cpp.o
  /Users/sammottley/Development/Embedded/command_architecture/Interfaces/Interface.h
  /Users/sammottley/Development/Embedded/command_architecture/Interfaces/LoRa.h
  /Users/sammottley/Development/Embedded/command_architecture/Interfaces/Serial.h
+ /Users/sammottley/Development/Embedded/command_architecture/Validators/Contains.h
  /Users/sammottley/Development/Embedded/command_architecture/Validators/Length.h
  /Users/sammottley/Development/Embedded/command_architecture/Validators/Validator.h
  /Users/sammottley/Development/Embedded/command_architecture/main.cpp

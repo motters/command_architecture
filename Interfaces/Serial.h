@@ -4,6 +4,8 @@
 
 #include "Interface.h"
 
+#include "../Validators/Contains.h"
+
 namespace Interfaces
 {
     class Serial : Interface<std::string>
@@ -23,8 +25,27 @@ namespace Interfaces
              */
             virtual Commands::Contract handle(std::string input)
             {
-                Commands::Contract status;
-                return status;
+                // Command contract
+                Commands::Contract contract;
+
+                // Has to have atleast a command byte
+                if(input.size() < 1)
+                    return contract;
+
+                // Mark interface
+                contract.interface = Commands::Contract::AvailableInterfaces::Serial;
+
+                // Find the correct command
+                if(Validators::Contains::startsWith(input, "REL="))
+                {
+                    updateContract(contract, parse(input, "%s=%i", contract.params));
+                }
+                else if(Validators::Contains::startsWith(input, "REL?"))
+                {
+                    updateContract(contract, parse(input, "%s?", contract.params));
+                }
+
+                return contract;
             };
     };
 }

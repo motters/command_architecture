@@ -1,5 +1,7 @@
 #pragma once
 
+#include <string>
+
 #include "Validator.h"
 
 namespace Validators
@@ -16,6 +18,14 @@ namespace Validators
             {
                 return true;
             };
+
+            static bool startsWith(std::string &str, const std::string &format)
+            {
+                if (str.rfind(format, 0) == 0)
+                    return true;
+
+                return false;
+            }
 
     };
 }

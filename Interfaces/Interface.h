@@ -175,7 +175,6 @@ namespace Interfaces
                                 return ParseErrors::InvalidDataLength;
                             }
                             break;
-                            // matching a string
                         case 's':
                             // Create string
                             if(Validators::Length::greaterThanEqualTo(str, 1))
