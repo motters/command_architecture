@@ -1,5 +1,7 @@
 #pragma once
 
+#include <string>
+
 #include "Validator.h"
 
 namespace Validators
@@ -13,10 +15,22 @@ namespace Validators
 
             }
 
-            virtual bool validate()
+            virtual bool validate(std::string data, int length)
             {
-                return true;
-            };
+                if(data.size() >= length)
+                    return true;
+
+                return false;
+            }
+
+
+            static bool greaterThanEqualTo(std::string data, int length)
+            {
+                if(data.size() >= length)
+                    return true;
+
+                return false;
+            }
 
     };
 }

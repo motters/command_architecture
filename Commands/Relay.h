@@ -16,12 +16,14 @@ namespace Commands
 
             bool on()
             {
-                std::cout << "Turning relay on" << std::endl;;
+                std::cout << "Turning relay on" << std::endl;
+                return true;
             }
 
             bool off()
             {
-                std::cout << "Turning relay off" << std::endl;;
+                std::cout << "Turning relay off" << std::endl;
+                return true;
             }
 
     };

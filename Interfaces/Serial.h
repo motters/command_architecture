@@ -6,7 +6,7 @@
 
 namespace Interfaces
 {
-    class Serial : Interface<std::vector<char>>
+    class Serial : Interface<std::string>
     {
         public:
 
@@ -21,9 +21,10 @@ namespace Interfaces
              * @param input
              * @return
              */
-            virtual bool handle(std::vector<char> input)
+            virtual Commands::Contract handle(std::string input)
             {
-                return true;
+                Commands::Contract status;
+                return status;
             };
     };
 }

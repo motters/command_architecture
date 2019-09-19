@@ -6,19 +6,63 @@
 
 #IncludeRegexTransform: 
 
+/Users/sammottley/Development/Embedded/command_architecture/Commands/Calibration.h
+iostream
+-
+Command.h
+/Users/sammottley/Development/Embedded/command_architecture/Commands/Command.h
+
+/Users/sammottley/Development/Embedded/command_architecture/Commands/Command.h
+
+/Users/sammottley/Development/Embedded/command_architecture/Commands/Contract.h
+string
+-
+vector
+-
+any
+-
+
 /Users/sammottley/Development/Embedded/command_architecture/Interfaces/Interface.h
+string
+-
+vector
+-
+any
+-
+../Commands/Contract.h
+/Users/sammottley/Development/Embedded/command_architecture/Commands/Contract.h
+../Validators/Length.h
+/Users/sammottley/Development/Embedded/command_architecture/Validators/Length.h
 
 /Users/sammottley/Development/Embedded/command_architecture/Interfaces/LoRa.h
 vector
 -
+map
+-
+string
+-
+any
+-
 Interface.h
 /Users/sammottley/Development/Embedded/command_architecture/Interfaces/Interface.h
+../Commands/Calibration.h
+/Users/sammottley/Development/Embedded/command_architecture/Commands/Calibration.h
+../Commands/Contract.h
+/Users/sammottley/Development/Embedded/command_architecture/Commands/Contract.h
 
 /Users/sammottley/Development/Embedded/command_architecture/Interfaces/Serial.h
 vector
 -
 Interface.h
 /Users/sammottley/Development/Embedded/command_architecture/Interfaces/Interface.h
+
+/Users/sammottley/Development/Embedded/command_architecture/Validators/Length.h
+string
+-
+Validator.h
+/Users/sammottley/Development/Embedded/command_architecture/Validators/Validator.h
+
+/Users/sammottley/Development/Embedded/command_architecture/Validators/Validator.h
 
 /Users/sammottley/Development/Embedded/command_architecture/main.cpp
 iostream

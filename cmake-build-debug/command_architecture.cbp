@@ -86,6 +86,9 @@
 		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Commands/Command.h">
 			<Option target="command_architecture"/>
 		</Unit>
+		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Commands/Contract.h">
+			<Option target="command_architecture"/>
+		</Unit>
 		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Commands/CreditControl.h">
 			<Option target="command_architecture"/>
 		</Unit>

@@ -18,11 +18,13 @@ namespace Commands
             bool enable()
             {
                 std::cout << "Credit control enabled";
+                return true;
             }
 
             bool addCredit(uint32_t amount)
             {
                 std::cout << "Adding credit: " << amount << std::endl;
+                return true;
             }
 
     };

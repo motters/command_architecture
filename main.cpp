@@ -6,10 +6,10 @@
 #include "Interfaces/Serial.h"
 
 // Example lora data in the format it is received
-std::vector<uint8_t> loRaData = { 'b', 0, 0x00, 0x00, 0x10 };
+uint8_t loraRaw[] = { 'a', 0, 0x00, 5, 10 };
 
 // Example serial data in the format it is received in
-std::vector<char> seriaData = {'R', 'E', 'L', '=', '1'};
+std::string seriaData = "REL=1";
 
 // Tasks
 void loRaTask();
@@ -24,12 +24,8 @@ int main()
     // Welcome message
     std::cout << "Command Architecture Demo" << std::endl;
 
-    // Event loop
-    while(true)
-    {
-        loRaTask();
-        serialTask();
-    }
+    loRaTask();
+    //serialTask();
 
     return 0;
 }
@@ -40,9 +36,26 @@ int main()
  */
 void loRaTask()
 {
+    // Create interface
     Interfaces::LoRa lora;
 
-    bool state = lora.handle(loRaData);
+    // Convert data to string
+    std::string data((char *)loraRaw, sizeof(loraRaw) + 1);
+
+    // Get command contract
+    auto contract = lora.handle(data);
+
+    // Demo
+    if(contract.status && contract.validLength)
+    {
+        std::cout << "Sent: " << data << std::endl <<
+                  "Command: " << std::any_cast < char >(contract.params[0]) <<
+                  " Param 1: " << std::any_cast < uint32_t >(contract.params[1]) << std::endl;
+    }
+    else
+    {
+        std::cout << "Invalid data" << std::endl;
+    }
 }
 
 
@@ -51,7 +64,9 @@ void loRaTask()
  */
 void serialTask()
 {
+    // Create interface
     Interfaces::Serial serial;
 
-    bool state = serial.handle(seriaData);
+    // Get command contract
+    auto state = serial.handle(seriaData);
 }
