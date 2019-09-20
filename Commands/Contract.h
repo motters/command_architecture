@@ -18,7 +18,7 @@ namespace Commands
                 Serial,
                 LoRa
             };
-             AvailableInterfaces interface = AvailableInterfaces::LoRa;
+            AvailableInterfaces interface = AvailableInterfaces::LoRa;
 
             // Input string's length was verified
             bool validLength = false;

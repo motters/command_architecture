@@ -92,6 +92,9 @@
 		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Commands/CreditControl.h">
 			<Option target="command_architecture"/>
 		</Unit>
+		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Commands/Directory.h">
+			<Option target="command_architecture"/>
+		</Unit>
 		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Commands/Relay.h">
 			<Option target="command_architecture"/>
 		</Unit>
