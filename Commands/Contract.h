@@ -37,6 +37,6 @@ namespace Commands
             std::vector < std::any > returns;
 
             // Holds the communication generated out
-            std::string communicationsOutput;
+            std::string communicationsOutput = "";
     };
 }

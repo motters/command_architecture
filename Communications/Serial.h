@@ -41,11 +41,11 @@ namespace Communications
                 // Find the correct command
                 if(Validators::Contains::startsWith(input, "REL="))
                 {
-                    updateContract(contract, Commands::List::SetRelay, parse(input, "%s=%i", contract.params));
+                    updateContract(contract, Commands::List::SetRelay, parseIn(input, "%s=%i", contract.params));
                 }
                 else if(Validators::Contains::startsWith(input, "REL?"))
                 {
-                    updateContract(contract, Commands::List::GetRelay, parse(input, "%s?", contract.params));
+                    updateContract(contract, Commands::List::GetRelay, parseIn(input, "%s?", contract.params));
                 }
 
                 return contract;

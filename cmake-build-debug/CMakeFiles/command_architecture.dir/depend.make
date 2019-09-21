@@ -9,6 +9,7 @@ CMakeFiles/command_architecture.dir/main.cpp.o: ../Commands/Radio.h
 CMakeFiles/command_architecture.dir/main.cpp.o: ../Communications/Communication.h
 CMakeFiles/command_architecture.dir/main.cpp.o: ../Communications/LoRa.h
 CMakeFiles/command_architecture.dir/main.cpp.o: ../Communications/Serial.h
+CMakeFiles/command_architecture.dir/main.cpp.o: ../Tools/GetAny.h
 CMakeFiles/command_architecture.dir/main.cpp.o: ../Validators/Contains.h
 CMakeFiles/command_architecture.dir/main.cpp.o: ../Validators/Length.h
 CMakeFiles/command_architecture.dir/main.cpp.o: ../Validators/Range.h

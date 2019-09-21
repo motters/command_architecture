@@ -40,8 +40,6 @@ int main()
  */
 void loRaTask()
 {
-    // Directory for commands
-    Commands::Directory directory;
 
     // Create interface
     Communications::LoRa lora;
@@ -52,15 +50,19 @@ void loRaTask()
     // Get command contract
     auto contract = lora.handle(data);
 
-    // Execute command in contract
-    directory.call(contract);
 
     // Demo
     if(contract.status && contract.validLength)
     {
         std::cout << "Sent: " << data << std::endl <<
                      "Command: " << std::any_cast < char >(contract.params[0]) <<
-                     " Param 1: " << std::any_cast < uint32_t >(contract.params[1]) << std::endl;
+                     " Param 1: " << std::any_cast < uint32_t >(contract.params[1]) << std::endl<<
+                     "Sending back size:" << contract.communicationsOutput.size()<< std::endl;
+
+        for(int i = 0; i <  contract.communicationsOutput.size(); i++)
+        {
+            std::cout << unsigned((uint8_t)contract.communicationsOutput.at(i)) << " ";
+        }
     }
     else
     {
