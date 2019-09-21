@@ -91,6 +91,26 @@ namespace Communications
                     // Find correct conversion specifier
                     switch (specifier)
                     {
+                        case 'x':
+                        {
+                            // Ignore param
+                            break;
+                        }
+                        case 'q':
+                        {
+                            // Push param over by 1
+                            if(contract.returns.size() > param)
+                            {
+                                auto i = contract.returns.begin();
+                                i += 2;
+                                contract.returns.insert(i, contract.returns.at(param));
+                            }
+                            else
+                            {
+                                return ParseErrors::InvalidDataType;
+                            }
+                            break;
+                        }
                         case 'c':
                         {
                             // Validates and returns int value

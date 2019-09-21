@@ -44,7 +44,7 @@ namespace Communications
                 // Find the correct command
                 if(Validators::Contains::startsWith(input, "FREQ="))
                 {
-                    processCommand(contract, Commands::List::SetFrequency, input, "%s=%o,%m", "FREQ=%o,%m");
+                    processCommand(contract, Commands::List::SetFrequency, input, "%s=%o,%m", "FREQ=%q%m,%o");
                 }
 
 
