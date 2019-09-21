@@ -113,17 +113,14 @@ namespace Communications
                         {
                             // Validates and returns int value
                             auto value = get<uint32_t>(contract.returns.at(param));
-                            std::cout << "Value: " << value.value <<std::endl;
                             if(value.state)
                             {
                                 uint8_t out[4];
                                 *(uint32_t*)&out = value.value;
-                                std::cout << unsigned(out[0]) << " " << unsigned(out[1])<< " " <<
-                                             unsigned(out[2])<< " " << unsigned(out[3]) << std::endl;
-                                contract.communicationsOutput.push_back(out[0]);
-                                contract.communicationsOutput.push_back(out[1]);
-                                contract.communicationsOutput.push_back(out[2]);
                                 contract.communicationsOutput.push_back(out[3]);
+                                contract.communicationsOutput.push_back(out[2]);
+                                contract.communicationsOutput.push_back(out[1]);
+                                contract.communicationsOutput.push_back(out[0]);
                             }
                             else
                             {
@@ -139,9 +136,9 @@ namespace Communications
                             {
                                 uint8_t out[4];
                                 *(uint32_t*)&out = value.value;
-                                contract.communicationsOutput.push_back(out[0]);
-                                contract.communicationsOutput.push_back(out[1]);
                                 contract.communicationsOutput.push_back(out[2]);
+                                contract.communicationsOutput.push_back(out[1]);
+                                contract.communicationsOutput.push_back(out[0]);
                             }
                             else
                             {
@@ -157,8 +154,8 @@ namespace Communications
                             {
                                 uint8_t out[2];
                                 *(uint16_t*)&out = value.value;
-                                contract.communicationsOutput.push_back(out[0]);
                                 contract.communicationsOutput.push_back(out[1]);
+                                contract.communicationsOutput.push_back(out[0]);
                             }
                             else
                             {
@@ -292,7 +289,6 @@ namespace Communications
                                 uint8_t in[4] = {(uint8_t)str.at(3), (uint8_t)str.at(2), (uint8_t)str.at(1), (uint8_t)str.at(0)};
                                 uint32_t out = *(uint32_t*)&in;
                                 anyType = out;
-
                                 str.erase(0, 4);
                             }
                             else
@@ -306,10 +302,14 @@ namespace Communications
                             // Create uint32_t using 3 consecutive bytes
                             if(Validators::Length::greaterThanEqualTo(str, 3))
                             {
-                                uint32_t byte1 = ((uint8_t) str.substr (0, 1).at(0)) << 16;
+                                /*uint32_t byte1 = ((uint8_t) str.substr (0, 1).at(0)) << 16;
                                 uint32_t byte2 = ((uint8_t) str.substr (1, 2).at(0)) << 8;
                                 uint32_t byte3 = ((uint8_t) str.substr (2, 3).at(0));
-                                anyType  = (uint32_t) (byte1 + byte2 + byte3);
+                                anyType  = (uint32_t) (byte1 + byte2 + byte3);*/
+
+                                uint8_t in[4] = {0, (uint8_t)str.at(2), (uint8_t)str.at(1), (uint8_t)str.at(0)};
+                                uint32_t out = *(uint32_t*)&in;
+                                anyType = out;
                                 str.erase (0, 3);
                             }
                             else
@@ -323,9 +323,12 @@ namespace Communications
                             // Create uin162_t using 2 consecutive bytes
                             if(Validators::Length::greaterThanEqualTo(str, 2))
                             {
-                                uint16_t byte1 = ((uint8_t) str.substr (0, 1).at(0)) << 8;
+                                /*uint16_t byte1 = ((uint8_t) str.substr (0, 1).at(0)) << 8;
                                 uint16_t byte2 = ((uint8_t) str.substr (1, 2).at(0));
-                                anyType  = (uint16_t) (byte1 + byte2);
+                                anyType  = (uint16_t) (byte1 + byte2);*/
+                                uint8_t in[2] = {(uint8_t)str.at(1), (uint8_t)str.at(0)};
+                                uint16_t out = *(uint16_t*)&in;
+                                anyType = out;
                                 str.erase (0, 2);
                             }
                             else

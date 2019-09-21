@@ -54,13 +54,13 @@ namespace Communications
                 {
                     case Functions::SetFrequency:
                         updateContract(contract, Commands::List::SetFrequency, parseIn(input, "%c%4", contract.params));
-                        // Execute command in contract
                         directory.call(contract);
-                        parseOut(contract, "u%4");
+                        parseOut(contract, "a%4");
                         break;
                     case Functions::SetRelay:
                         updateContract(contract, Commands::List::SetRelay, parseIn(input, "%c%1", contract.params));
-                        //parseOut(contract, "%c%4");
+                        directory.call(contract);
+                        parseOut(contract, "b%4");
                         break;
                 }
 

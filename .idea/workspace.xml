@@ -12,18 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e557b55a-f4d0-41b8-9d23-182d820dc3aa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Tools/GetAny.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commands/Command.h" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/Command.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Commands/Contract.h" beforeDir="false" afterPath="$PROJECT_DIR$/Commands/Contract.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Communications/Communication.h" beforeDir="false" afterPath="$PROJECT_DIR$/Communications/Communication.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Communications/LoRa.h" beforeDir="false" afterPath="$PROJECT_DIR$/Communications/LoRa.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Communications/Serial.h" beforeDir="false" afterPath="$PROJECT_DIR$/Communications/Serial.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/command_architecture.dir/main.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/command_architecture.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/command_architecture.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -39,11 +30,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+            <state relative-caret-position="145">
+              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -54,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Communications/LoRa.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+            <state relative-caret-position="269">
+              <caret line="64" column="17" lean-forward="true" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="17" />
               <folding>
                 <element signature="e#14#31#0" expanded="true" />
               </folding>
@@ -63,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Communications/Communication.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="125" column="80" selection-start-line="125" selection-start-column="80" selection-end-line="125" selection-end-column="80" />
+            <state relative-caret-position="1976">
+              <caret line="158" column="77" selection-start-line="158" selection-start-column="77" selection-end-line="158" selection-end-column="77" />
               <folding>
                 <element signature="e#14#31#0" expanded="true" />
               </folding>
@@ -78,22 +69,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Commands/Contract.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
+            <state relative-caret-position="350">
               <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="e#14#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Commands/Radio.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
-              <folding>
-                <element signature="e#14#33#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -142,9 +121,9 @@
         <option value="$PROJECT_DIR$/Commands/Command.h" />
         <option value="$PROJECT_DIR$/Tools/GetAny.h" />
         <option value="$PROJECT_DIR$/Commands/Contract.h" />
+        <option value="$PROJECT_DIR$/Communications/Communication.h" />
         <option value="$PROJECT_DIR$/Communications/LoRa.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/Communications/Communication.h" />
       </list>
     </option>
   </component>
@@ -243,12 +222,12 @@
       <updated>1568807818548</updated>
       <workItem from="1568807822501" duration="29955000" />
       <workItem from="1569089872096" duration="338000" />
-      <workItem from="1569090465670" duration="7703000" />
+      <workItem from="1569090465670" duration="9219000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37996000" />
+    <option name="totallyTimeSpent" value="39512000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
@@ -458,8 +437,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Commands/Contract.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
+        <state relative-caret-position="350">
           <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#14#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Communications/Communication.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1976">
+          <caret line="158" column="77" selection-start-line="158" selection-start-column="77" selection-end-line="158" selection-end-column="77" />
           <folding>
             <element signature="e#14#31#0" expanded="true" />
           </folding>
@@ -468,8 +457,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Communications/LoRa.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+        <state relative-caret-position="269">
+          <caret line="64" column="17" lean-forward="true" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="17" />
           <folding>
             <element signature="e#14#31#0" expanded="true" />
           </folding>
@@ -478,20 +467,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+        <state relative-caret-position="145">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Communications/Communication.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="125" column="80" selection-start-line="125" selection-start-column="80" selection-end-line="125" selection-end-column="80" />
-          <folding>
-            <element signature="e#14#31#0" expanded="true" />
           </folding>
         </state>
       </provider>

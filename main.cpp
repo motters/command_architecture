@@ -50,15 +50,16 @@ void loRaTask()
     // Get command contract
     auto contract = lora.handle(data);
 
-
     // Demo
     if(contract.status && contract.validLength)
     {
-        std::cout << "Sent: " << data << std::endl <<
-                     "Command: " << std::any_cast < char >(contract.params[0]) <<
-                     " Param 1: " << std::any_cast < uint32_t >(contract.params[1]) << std::endl<<
-                     "Sending back size:" << contract.communicationsOutput.size()<< std::endl;
+        std::cout << "Received: ";
+        for(int i = 0; i <  data.size(); i++)
+        {
+            std::cout << unsigned((uint8_t)data.at(i)) << " ";
+        }
 
+        std::cout << "Sent: ";
         for(int i = 0; i <  contract.communicationsOutput.size(); i++)
         {
             std::cout << unsigned((uint8_t)contract.communicationsOutput.at(i)) << " ";
