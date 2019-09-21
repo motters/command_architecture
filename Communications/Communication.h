@@ -6,6 +6,7 @@
 
 #include "../Commands/Contract.h"
 #include "../Commands/CommandList.h"
+#include "../Commands/Directory.h"
 
 #include "../Validators/Length.h"
 
@@ -29,6 +30,17 @@ namespace Communications
             InvalidDataType,
             None,
         };
+
+        void processCommand(Commands::Contract& contract, Commands::List command, std::string input,
+                            const std::string & inputFormat, const std::string & outputFormat)
+        {
+            // Directory for commands
+            Commands::Directory directory;
+
+            updateContract(contract, command, parseIn(input, inputFormat, contract.params));
+            directory.call(contract);
+            parseOut(contract, outputFormat);
+        }
 
         void updateContract(Commands::Contract& contract, Commands::List command, ParseErrors result)
         {

@@ -7,7 +7,6 @@
 
 #include "../Commands/Contract.h"
 #include "../Commands/CommandList.h"
-#include "../Commands/Directory.h"
 
 namespace Communications
 {
@@ -46,21 +45,14 @@ namespace Communications
                 // Mark interface
                 contract.interface = Commands::Contract::AvailableInterfaces::LoRa;
 
-                // Directory for commands
-                Commands::Directory directory;
-
                 // Find the correct command
                 switch(static_cast<Functions>(input.at(0)))
                 {
                     case Functions::SetFrequency:
-                        updateContract(contract, Commands::List::SetFrequency, parseIn(input, "%c%4,%1", contract.params));
-                        directory.call(contract);
-                        parseOut(contract, "a%4%1");
+                        processCommand(contract, Commands::List::SetFrequency, input, "%c%4,%1", "a%4%1");
                         break;
                     case Functions::SetRelay:
-                        updateContract(contract, Commands::List::SetRelay, parseIn(input, "%c%1", contract.params));
-                        directory.call(contract);
-                        parseOut(contract, "b%4");
+                        processCommand(contract, Commands::List::SetRelay, input, "%c%1", "b%1");
                         break;
                 }
 

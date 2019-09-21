@@ -59,6 +59,8 @@ any
 /Users/sammottley/Development/Embedded/command_architecture/Commands/Contract.h
 ../Commands/CommandList.h
 /Users/sammottley/Development/Embedded/command_architecture/Commands/CommandList.h
+../Commands/Directory.h
+/Users/sammottley/Development/Embedded/command_architecture/Commands/Directory.h
 ../Validators/Length.h
 /Users/sammottley/Development/Embedded/command_architecture/Validators/Length.h
 ../Tools/GetAny.h
@@ -75,8 +77,6 @@ Communication.h
 /Users/sammottley/Development/Embedded/command_architecture/Commands/Contract.h
 ../Commands/CommandList.h
 /Users/sammottley/Development/Embedded/command_architecture/Commands/CommandList.h
-../Commands/Directory.h
-/Users/sammottley/Development/Embedded/command_architecture/Commands/Directory.h
 
 /Users/sammottley/Development/Embedded/command_architecture/Communications/Serial.h
 vector
