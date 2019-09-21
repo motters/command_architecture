@@ -53,7 +53,7 @@ void loRaTask()
     auto contract = lora.handle(data);
 
     // Demo
-    if(contract.status && contract.validLength)
+    if(contract.validExecution())
     {
         std::cout << "LORA = ";
         std::cout << "Received: ";
@@ -87,7 +87,7 @@ void serialTask()
     auto contract = serial.handle(seriaData);
 
     // Demo
-    if(contract.status && contract.validLength)
+    if(contract.validExecution())
     {
 
         std::cout << "SERIAL = " << "Received: " << seriaData << " Sent: " << contract.communicationsOutput << std::endl;

@@ -23,6 +23,16 @@ namespace Tools
         };
 
         template<typename T>
+        Value<T> get(std::vector<std::any> vec, int i)
+        {
+            if(vec.size() > i)
+                return Tools::GetAny::get<T>(vec.at(i));
+
+            Value<T> a;
+            return a;
+        }
+
+        template<typename T>
         Value<T> get(std::any param)
         {
             Value<T> rtn;

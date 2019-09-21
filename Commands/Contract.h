@@ -8,7 +8,7 @@
 
 namespace Commands
 {
-    class Contract
+    struct Contract
     {
         public:
             // Input string can converted into a function and params
@@ -38,5 +38,13 @@ namespace Commands
 
             // Holds the communication generated out
             std::string communicationsOutput = "";
+
+            // Check is contract was execute correctly
+            bool validExecution()
+            {
+                if(status && validLength && commandStatus)
+                    return true;
+                return false;
+            }
     };
 }

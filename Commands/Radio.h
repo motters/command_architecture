@@ -21,7 +21,7 @@ namespace Commands
             bool setFrequency(Contract& contract)
             {
                 // Validates and returns value
-                auto frequency = get<uint32_t>(contract.params.at(1));
+                auto frequency = get<uint32_t>(contract.params, 1);
 
                 // If validation passed
                 if( frequency.state &&

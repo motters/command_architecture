@@ -82,7 +82,7 @@ namespace Communications
                         case 'i':
                         {
                             // Validates and returns int value
-                            auto value = get<uint32_t>(contract.returns.at(param));
+                            auto value = get<uint32_t>(contract.returns, param);
                             if(value.state)
                             {
                                 contract.communicationsOutput += std::to_string(value.value);
@@ -97,7 +97,7 @@ namespace Communications
                         case 'f':
                         {
                             // Validates and returns int value
-                            auto value = get<float>(contract.returns.at(param));
+                            auto value = get<float>(contract.returns, param);
 
                             if(value.state)
                             {
@@ -113,7 +113,7 @@ namespace Communications
                         case '4':
                         {
                             // Validates and returns int value
-                            auto value = get<uint32_t>(contract.returns.at(param));
+                            auto value = get<uint32_t>(contract.returns, param);
                             if(value.state)
                             {
                                 uint8_t out[4];
@@ -132,7 +132,7 @@ namespace Communications
                         case '3':
                         {
                             // Validates and returns int value
-                            auto value = get<uint32_t>(contract.returns.at(param));
+                            auto value = get<uint32_t>(contract.returns, param);
                             if(value.state)
                             {
                                 uint8_t out[4];
@@ -150,7 +150,7 @@ namespace Communications
                         case '2':
                         {
                             // Validates and returns int value
-                            auto value = get<uint16_t>(contract.returns.at(param));
+                            auto value = get<uint16_t>(contract.returns, param);
                             if(value.state)
                             {
                                 uint8_t out[2];
@@ -168,7 +168,7 @@ namespace Communications
                         case '1':
                         {
                             // Validates and returns int value
-                            auto value = get<uint8_t>(contract.returns.at(param));
+                            auto value = get<uint8_t>(contract.returns, param);
                             if(value.state)
                             {
                                 contract.communicationsOutput.push_back(value.value);
@@ -183,7 +183,7 @@ namespace Communications
                         case 'c':
                         {
                             // Validates and returns int value
-                            auto value = get<char>(contract.returns.at(param));
+                            auto value = get<char>(contract.returns, param);
                             if(value.state)
                             {
                                 contract.communicationsOutput.push_back(value.value);
@@ -198,7 +198,7 @@ namespace Communications
                         case 's':
                         {
                             // Validates and returns int value
-                            auto value = get<std::string>(contract.returns.at(param));
+                            auto value = get<std::string>(contract.returns, param);
                             if(value.state)
                             {
                                 contract.communicationsOutput += value.value;
