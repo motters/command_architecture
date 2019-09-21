@@ -38,15 +38,18 @@ namespace Communications
                 // Mark interface
                 contract.interface = Commands::Contract::AvailableInterfaces::Serial;
 
+                // Directory for commands
+                Commands::Directory directory;
+
                 // Find the correct command
-                if(Validators::Contains::startsWith(input, "REL="))
+                if(Validators::Contains::startsWith(input, "FREQ="))
                 {
-                    updateContract(contract, Commands::List::SetRelay, parseIn(input, "%s=%i", contract.params));
+                    //std::cout << "1";
+                    updateContract(contract, Commands::List::SetFrequency, parseIn(input, "%s=%i", contract.params));
+                    directory.call(contract);
+                    parseOut(contract, "FREQ=%i");
                 }
-                else if(Validators::Contains::startsWith(input, "REL?"))
-                {
-                    updateContract(contract, Commands::List::GetRelay, parseIn(input, "%s?", contract.params));
-                }
+
 
                 return contract;
             };

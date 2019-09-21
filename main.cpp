@@ -13,7 +13,7 @@
 uint8_t loraRaw[] = { 'a', 0x31, 0x00, 100, 200 };
 
 // Example serial data in the format it is received in
-std::string seriaData = "REL=1";
+std::string seriaData = "FREQ=800000000";
 
 // Tasks
 void loRaTask();
@@ -27,8 +27,10 @@ int main()
 {
     // Welcome message
     std::cout << "Command Architecture Demo" << std::endl;
+    std::cout << "=========================" << std::endl<< std::endl;
 
     loRaTask();
+    std::cout <<std::endl<<std::endl;
     serialTask();
 
     return 0;
@@ -53,6 +55,7 @@ void loRaTask()
     // Demo
     if(contract.status && contract.validLength)
     {
+        std::cout << "LORA = ";
         std::cout << "Received: ";
         for(int i = 0; i <  data.size(); i++)
         {
@@ -77,7 +80,7 @@ void loRaTask()
  */
 void serialTask()
 {
-    /*// Create interface
+    // Create interface
     Communications::Serial serial;
 
     // Get command contract
@@ -86,12 +89,11 @@ void serialTask()
     // Demo
     if(contract.status && contract.validLength)
     {
-        std::cout << "Sent: " << seriaData << std::endl <<
-                     "Command: " << std::any_cast < std::string >(contract.params[0]) <<
-                     " Param 1: " << std::any_cast < int >(contract.params[1]) << std::endl;
+
+        std::cout << "SERIAL = " << "Received: " << seriaData << " Sent: " << contract.communicationsOutput << std::endl;
     }
     else
     {
         std::cout << "Invalid data" << std::endl;
-    }*/
+    }
 }

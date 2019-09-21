@@ -82,7 +82,7 @@ namespace Communications
                         case 'i':
                         {
                             // Validates and returns int value
-                            auto value = get<int>(contract.returns.at(param));
+                            auto value = get<uint32_t>(contract.returns.at(param));
                             if(value.state)
                             {
                                 contract.communicationsOutput += std::to_string(value.value);
@@ -98,6 +98,7 @@ namespace Communications
                         {
                             // Validates and returns int value
                             auto value = get<float>(contract.returns.at(param));
+
                             if(value.state)
                             {
                                 contract.communicationsOutput += std::to_string(value.value);
@@ -262,7 +263,7 @@ namespace Communications
                             // Save int using all bytes till next %
                             if(Validators::Length::greaterThanEqualTo(str, 1))
                             {
-                                anyType = std::stoi(str.substr (0, str.find(*i)));
+                                anyType = (uint32_t) std::stoi(str.substr (0, str.find(*i)));
                             }
                             else
                             {
@@ -274,13 +275,29 @@ namespace Communications
                             // Save float using all bytes till next %
                             if(Validators::Length::greaterThanEqualTo(str, 1))
                             {
-                                anyType = std::stof(str.substr (0, str.find (*i)));
+                                anyType = (float)std::stof(str.substr (0, str.find (*i)));
                             }
                             else
                             {
                                 return ParseErrors::InvalidDataLength;
                             }
                             break;
+                        case 'g':
+                        {
+                            // Create uint32_t using 4 consecutive bytes
+                            if(Validators::Length::greaterThanEqualTo(str, 4))
+                            {
+                                uint8_t in[4] = {(uint8_t)str.at(3), (uint8_t)str.at(2), (uint8_t)str.at(1), (uint8_t)str.at(0)};
+                                float out = *(float*)&in;
+                                anyType = out;
+                                str.erase(0, 4);
+                            }
+                            else
+                            {
+                                return ParseErrors::InvalidDataLength;
+                            }
+                            break;
+                        }
                         case '4':
                         {
                             // Create uint32_t using 4 consecutive bytes
