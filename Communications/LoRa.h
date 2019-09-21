@@ -53,9 +53,9 @@ namespace Communications
                 switch(static_cast<Functions>(input.at(0)))
                 {
                     case Functions::SetFrequency:
-                        updateContract(contract, Commands::List::SetFrequency, parseIn(input, "%c%4", contract.params));
+                        updateContract(contract, Commands::List::SetFrequency, parseIn(input, "%c%4,%1", contract.params));
                         directory.call(contract);
-                        parseOut(contract, "a%4");
+                        parseOut(contract, "a%4%1");
                         break;
                     case Functions::SetRelay:
                         updateContract(contract, Commands::List::SetRelay, parseIn(input, "%c%1", contract.params));

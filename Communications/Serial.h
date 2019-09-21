@@ -45,9 +45,9 @@ namespace Communications
                 if(Validators::Contains::startsWith(input, "FREQ="))
                 {
                     //std::cout << "1";
-                    updateContract(contract, Commands::List::SetFrequency, parseIn(input, "%s=%i", contract.params));
+                    updateContract(contract, Commands::List::SetFrequency, parseIn(input, "%s=%o,%m", contract.params));
                     directory.call(contract);
-                    parseOut(contract, "FREQ=%i");
+                    parseOut(contract, "FREQ=%o,%m");
                 }
 
 

@@ -10,10 +10,10 @@
 #include "Commands/Directory.h"
 
 // Example lora data in the format it is received
-uint8_t loraRaw[] = { 'a', 0x31, 0x00, 100, 200 };
+uint8_t loraRaw[] = { 'a', 0x31, 0x00, 100, 200, 5 };
 
 // Example serial data in the format it is received in
-std::string seriaData = "FREQ=800000000";
+std::string seriaData = "FREQ=822109384,5";
 
 // Tasks
 void loRaTask();
@@ -63,7 +63,7 @@ void loRaTask()
         }
 
         std::cout << "Sent: ";
-        for(int i = 0; i <  contract.communicationsOutput.size(); i++)
+        for(int i = 0; i < contract.communicationsOutput.size(); i++)
         {
             std::cout << unsigned((uint8_t)contract.communicationsOutput.at(i)) << " ";
         }

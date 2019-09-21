@@ -79,13 +79,28 @@ namespace Communications
                     // Find correct conversion specifier
                     switch (specifier)
                     {
-                        case 'i':
+                        case 'c':
                         {
                             // Validates and returns int value
-                            auto value = get<uint32_t>(contract.returns, param);
+                            auto value = get<char>(contract.returns, param);
                             if(value.state)
                             {
-                                contract.communicationsOutput += std::to_string(value.value);
+                                contract.communicationsOutput.push_back(value.value);
+                            }
+                            else
+                            {
+                                return ParseErrors::InvalidDataType;
+                            }
+
+                            break;
+                        }
+                        case 's':
+                        {
+                            // Validates and returns int value
+                            auto value = get<std::string>(contract.returns, param);
+                            if(value.state)
+                            {
+                                contract.communicationsOutput += value.value;
                             }
                             else
                             {
@@ -99,6 +114,51 @@ namespace Communications
                             // Validates and returns int value
                             auto value = get<float>(contract.returns, param);
 
+                            if(value.state)
+                            {
+                                contract.communicationsOutput += std::to_string(value.value);
+                            }
+                            else
+                            {
+                                return ParseErrors::InvalidDataType;
+                            }
+
+                            break;
+                        }
+                        case 'm':
+                        {
+                            // Validates and returns int value
+                            auto value = get<uint8_t>(contract.returns, param);
+                            if(value.state)
+                            {
+                                contract.communicationsOutput += std::to_string(value.value);
+                            }
+                            else
+                            {
+                                return ParseErrors::InvalidDataType;
+                            }
+
+                            break;
+                        }
+                        case 'n':
+                        {
+                            // Validates and returns int value
+                            auto value = get<uint16_t>(contract.returns, param);
+                            if(value.state)
+                            {
+                                contract.communicationsOutput += std::to_string(value.value);
+                            }
+                            else
+                            {
+                                return ParseErrors::InvalidDataType;
+                            }
+
+                            break;
+                        }
+                        case 'o':
+                        {
+                            // Validates and returns int value
+                            auto value = get<uint32_t>(contract.returns, param);
                             if(value.state)
                             {
                                 contract.communicationsOutput += std::to_string(value.value);
@@ -180,36 +240,6 @@ namespace Communications
 
                             break;
                         }
-                        case 'c':
-                        {
-                            // Validates and returns int value
-                            auto value = get<char>(contract.returns, param);
-                            if(value.state)
-                            {
-                                contract.communicationsOutput.push_back(value.value);
-                            }
-                            else
-                            {
-                                return ParseErrors::InvalidDataType;
-                            }
-
-                            break;
-                        }
-                        case 's':
-                        {
-                            // Validates and returns int value
-                            auto value = get<std::string>(contract.returns, param);
-                            if(value.state)
-                            {
-                                contract.communicationsOutput += value.value;
-                            }
-                            else
-                            {
-                                return ParseErrors::InvalidDataType;
-                            }
-
-                            break;
-                        }
                         default:
                             // Invalid conversion specifier
                             return ParseErrors::InvalidCommandSpecifier;
@@ -259,17 +289,28 @@ namespace Communications
                     // Find correct conversion specifier
                     switch (specifier)
                     {
-                        case 'i':
-                            // Save int using all bytes till next %
+                        case 'c':
+                            // Create char
                             if(Validators::Length::greaterThanEqualTo(str, 1))
                             {
-                                anyType = (uint32_t) std::stoi(str.substr (0, str.find(*i)));
+                                anyType = str.substr (0, 1).at(0);
+                                str.erase (0, 1);
                             }
                             else
                             {
                                 return ParseErrors::InvalidDataLength;
                             }
-
+                            break;
+                        case 's':
+                            // Create string
+                            if(Validators::Length::greaterThanEqualTo(str, 1))
+                            {
+                                anyType = str.substr (0, str.find (*i));
+                            }
+                            else
+                            {
+                                return ParseErrors::InvalidDataLength;
+                            }
                             break;
                         case 'f':
                             // Save float using all bytes till next %
@@ -298,6 +339,42 @@ namespace Communications
                             }
                             break;
                         }
+                        case 'm':
+                            // Save int using all bytes till next %
+                            if(Validators::Length::greaterThanEqualTo(str, 1))
+                            {
+                                anyType = (uint8_t) std::stoi(str.substr (0, str.find(*i)));
+                            }
+                            else
+                            {
+                                return ParseErrors::InvalidDataLength;
+                            }
+
+                            break;
+                        case 'n':
+                            // Save int using all bytes till next %
+                            if(Validators::Length::greaterThanEqualTo(str, 1))
+                            {
+                                anyType = (uint16_t) std::stoi(str.substr (0, str.find(*i)));
+                            }
+                            else
+                            {
+                                return ParseErrors::InvalidDataLength;
+                            }
+
+                            break;
+                        case 'o':
+                            // Save int using all bytes till next %
+                            if(Validators::Length::greaterThanEqualTo(str, 1))
+                            {
+                                anyType = (uint32_t) std::stoi(str.substr (0, str.find(*i)));
+                            }
+                            else
+                            {
+                                return ParseErrors::InvalidDataLength;
+                            }
+
+                            break;
                         case '4':
                         {
                             // Create uint32_t using 4 consecutive bytes
@@ -368,29 +445,6 @@ namespace Communications
                             }
                             break;
                         }
-                        case 'c':
-                            // Create char
-                            if(Validators::Length::greaterThanEqualTo(str, 1))
-                            {
-                                anyType = str.substr (0, 1).at(0);
-                                str.erase (0, 1);
-                            }
-                            else
-                            {
-                                return ParseErrors::InvalidDataLength;
-                            }
-                            break;
-                        case 's':
-                            // Create string
-                            if(Validators::Length::greaterThanEqualTo(str, 1))
-                            {
-                                anyType = str.substr (0, str.find (*i));
-                            }
-                            else
-                            {
-                                return ParseErrors::InvalidDataLength;
-                            }
-                            break;
                         default:
                             // Invalid conversion specifier
                             return ParseErrors::InvalidCommandSpecifier;
