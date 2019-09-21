@@ -80,10 +80,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Commands/Calibration.h">
+		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Commands/Command.h">
 			<Option target="command_architecture"/>
 		</Unit>
-		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Commands/Command.h">
+		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Commands/CommandList.h">
 			<Option target="command_architecture"/>
 		</Unit>
 		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Commands/Contract.h">
@@ -95,7 +95,19 @@
 		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Commands/Directory.h">
 			<Option target="command_architecture"/>
 		</Unit>
+		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Commands/Radio.h">
+			<Option target="command_architecture"/>
+		</Unit>
 		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Commands/Relay.h">
+			<Option target="command_architecture"/>
+		</Unit>
+		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Communications/Communication.h">
+			<Option target="command_architecture"/>
+		</Unit>
+		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Communications/LoRa.h">
+			<Option target="command_architecture"/>
+		</Unit>
+		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Communications/Serial.h">
 			<Option target="command_architecture"/>
 		</Unit>
 		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Guards/Guard.h">
@@ -108,15 +120,6 @@
 			<Option target="command_architecture"/>
 		</Unit>
 		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Guards/NotSealed.h">
-			<Option target="command_architecture"/>
-		</Unit>
-		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Interfaces/Interface.h">
-			<Option target="command_architecture"/>
-		</Unit>
-		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Interfaces/LoRa.h">
-			<Option target="command_architecture"/>
-		</Unit>
-		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Interfaces/Serial.h">
 			<Option target="command_architecture"/>
 		</Unit>
 		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Validators/Contains.h">

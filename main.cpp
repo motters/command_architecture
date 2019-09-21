@@ -1,12 +1,16 @@
 #include <iostream>
 #include <vector>
+#include <cstdint>
 
-// Interfaces
-#include "Interfaces/LoRa.h"
-#include "Interfaces/Serial.h"
+// Communications
+#include "Communications/LoRa.h"
+#include "Communications/Serial.h"
+
+// Commands
+#include "Commands/Directory.h"
 
 // Example lora data in the format it is received
-uint8_t loraRaw[] = { 'a', 0, 0x00, 5, 10 };
+uint8_t loraRaw[] = { 'a', 0x31, 0x00, 100, 200 };
 
 // Example serial data in the format it is received in
 std::string seriaData = "REL=1";
@@ -36,21 +40,27 @@ int main()
  */
 void loRaTask()
 {
-    // Create interface
-    Interfaces::LoRa lora;
+    // Directory for commands
+    Commands::Directory directory;
 
-    // Convert data to string
+    // Create interface
+    Communications::LoRa lora;
+
+    // Convert raw lora data to string
     std::string data((char *)loraRaw, sizeof(loraRaw) + 1);
 
     // Get command contract
     auto contract = lora.handle(data);
 
+    // Execute command in contract
+    directory.call(contract);
+
     // Demo
     if(contract.status && contract.validLength)
     {
         std::cout << "Sent: " << data << std::endl <<
-                  "Command: " << std::any_cast < char >(contract.params[0]) <<
-                  " Param 1: " << std::any_cast < uint32_t >(contract.params[1]) << std::endl;
+                     "Command: " << std::any_cast < char >(contract.params[0]) <<
+                     " Param 1: " << std::any_cast < uint32_t >(contract.params[1]) << std::endl;
     }
     else
     {
@@ -64,8 +74,8 @@ void loRaTask()
  */
 void serialTask()
 {
-    // Create interface
-    Interfaces::Serial serial;
+    /*// Create interface
+    Communications::Serial serial;
 
     // Get command contract
     auto contract = serial.handle(seriaData);
@@ -80,5 +90,5 @@ void serialTask()
     else
     {
         std::cout << "Invalid data" << std::endl;
-    }
+    }*/
 }

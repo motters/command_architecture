@@ -20,5 +20,14 @@ namespace Validators
                 return true;
             };
 
+            template<typename T>
+            static bool between(T value, T min, T max)
+            {
+                if(value >= min && value <= max)
+                    return true;
+
+                return false;
+            }
+
     };
 }

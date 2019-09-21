@@ -3,14 +3,14 @@
 #include <vector>
 #include <string>
 
-#include "Interface.h"
+#include "Communication.h"
 
-#include "../Commands/Calibration.h"
 #include "../Commands/Contract.h"
+#include "../Commands/CommandList.h"
 
-namespace Interfaces
+namespace Communications
 {
-    class LoRa : Interface<std::string>
+    class LoRa : Communication<std::string>
     {
         public:
 
@@ -49,15 +49,16 @@ namespace Interfaces
                 switch(static_cast<Functions>(input.at(0)))
                 {
                     case Functions::SetFrequency:
-                        updateContract(contract, parse(input, "%c%4", contract.params));
+                        updateContract(contract, Commands::List::SetFrequency, parse(input, "%c%4", contract.params));
+                        processResponse(contract, "%c%4");
                         break;
                     case Functions::SetRelay:
-                        updateContract(contract, parse(input, "%c%1", contract.params));
+                        updateContract(contract, Commands::List::SetRelay, parse(input, "%c%1", contract.params));
+                        processResponse(contract, "%c%4");
                         break;
                 }
 
                 return contract;
-
             };
 
 

@@ -5,16 +5,17 @@
 #include <any>
 
 #include "../Commands/Contract.h"
+#include "../Commands/CommandList.h"
 
 #include "../Validators/Length.h"
 
-namespace Interfaces
+namespace Communications
 {
     template <typename T>
-    class Interface
+    class Communication
     {
     public:
-        Interface()
+        Communication()
         {
 
         }
@@ -26,22 +27,29 @@ namespace Interfaces
             None,
         };
 
+        void processResponse(Commands::Contract& contract, const std::string & format)
+        {
 
-        void updateContract(Commands::Contract& contract, ParseErrors result)
+        }
+
+        void updateContract(Commands::Contract& contract, Commands::List command, ParseErrors result)
         {
             switch (result)
             {
                 case ParseErrors::InvalidDataLength:
                     contract.status = false;
                     contract.validLength = false;
+                    contract.command = command;
                     break;
                 case ParseErrors::InvalidCommandSpecifier:
                     contract.status = false;
                     contract.validLength = true;
+                    contract.command = command;
                     break;
                 case ParseErrors::None:
                     contract.status = true;
                     contract.validLength = true;
+                    contract.command = command;
                     break;
             }
         }
