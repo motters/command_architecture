@@ -6,6 +6,12 @@
 #include "Communications/LoRa.h"
 #include "Communications/Serial.h"
 
+// Guards init
+#include "Guards/GuardsInit.h"
+
+// Settings
+#include "Storage.h"
+
 // Commands
 #include "Commands/Directory.h"
 
@@ -20,6 +26,7 @@ void loRaTask();
 void serialTask();
 
 
+
 /**
  * Main event loop
  */
@@ -28,6 +35,12 @@ int main()
     // Welcome message
     std::cout << "Command Architecture Demo" << std::endl;
     std::cout << "=========================" << std::endl<< std::endl;
+
+    // Setup the setting class
+    Storage storage;
+
+    // Setup guard classes so they have access to the settings class
+    Guards::GuardsInit::init(storage);
 
     loRaTask();
     std::cout <<std::endl<<std::endl;

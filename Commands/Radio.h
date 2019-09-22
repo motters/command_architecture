@@ -7,6 +7,8 @@
 
 #include "../Validators/Range.h"
 
+#include "../Guards/NotSealed.h"
+
 namespace Commands
 {
     class Radio : Command
@@ -28,7 +30,7 @@ namespace Commands
                 if( frequency.state && mode.state &&
 
                     // Run guards
-                    //@todo
+                    Guards::NotSealed::validate() &&
 
                     // Run validators
                     Validators::Range::between<uint32_t>(frequency.value, 800000000,900000000))

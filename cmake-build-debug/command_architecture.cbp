@@ -113,6 +113,9 @@
 		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Guards/Guard.h">
 			<Option target="command_architecture"/>
 		</Unit>
+		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Guards/GuardsInit.h">
+			<Option target="command_architecture"/>
+		</Unit>
 		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Guards/HasCredit.h">
 			<Option target="command_architecture"/>
 		</Unit>
@@ -120,6 +123,9 @@
 			<Option target="command_architecture"/>
 		</Unit>
 		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Guards/NotSealed.h">
+			<Option target="command_architecture"/>
+		</Unit>
+		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Storage.h">
 			<Option target="command_architecture"/>
 		</Unit>
 		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Tools/GetAny.h">

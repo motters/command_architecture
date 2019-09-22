@@ -12,6 +12,5 @@ namespace Guards
 
             }
 
-            virtual bool validate() = 0;
     };
 }

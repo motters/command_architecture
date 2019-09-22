@@ -10,6 +10,12 @@ CMakeFiles/command_architecture.dir/main.cpp.o
  /Users/sammottley/Development/Embedded/command_architecture/Communications/Communication.h
  /Users/sammottley/Development/Embedded/command_architecture/Communications/LoRa.h
  /Users/sammottley/Development/Embedded/command_architecture/Communications/Serial.h
+ /Users/sammottley/Development/Embedded/command_architecture/Guards/Guard.h
+ /Users/sammottley/Development/Embedded/command_architecture/Guards/GuardsInit.h
+ /Users/sammottley/Development/Embedded/command_architecture/Guards/HasCredit.h
+ /Users/sammottley/Development/Embedded/command_architecture/Guards/NotLocked.h
+ /Users/sammottley/Development/Embedded/command_architecture/Guards/NotSealed.h
+ /Users/sammottley/Development/Embedded/command_architecture/Storage.h
  /Users/sammottley/Development/Embedded/command_architecture/Tools/GetAny.h
  /Users/sammottley/Development/Embedded/command_architecture/Validators/Contains.h
  /Users/sammottley/Development/Embedded/command_architecture/Validators/Length.h

@@ -47,6 +47,8 @@ Contract.h
 /Users/sammottley/Development/Embedded/command_architecture/Commands/Contract.h
 ../Validators/Range.h
 /Users/sammottley/Development/Embedded/command_architecture/Validators/Range.h
+../Guards/NotSealed.h
+/Users/sammottley/Development/Embedded/command_architecture/Guards/NotSealed.h
 
 /Users/sammottley/Development/Embedded/command_architecture/Communications/Communication.h
 string
@@ -90,6 +92,34 @@ Communication.h
 ../Validators/Contains.h
 /Users/sammottley/Development/Embedded/command_architecture/Validators/Contains.h
 
+/Users/sammottley/Development/Embedded/command_architecture/Guards/Guard.h
+
+/Users/sammottley/Development/Embedded/command_architecture/Guards/GuardsInit.h
+../Storage.h
+/Users/sammottley/Development/Embedded/command_architecture/Storage.h
+NotSealed.h
+/Users/sammottley/Development/Embedded/command_architecture/Guards/NotSealed.h
+NotLocked.h
+/Users/sammottley/Development/Embedded/command_architecture/Guards/NotLocked.h
+HasCredit.h
+/Users/sammottley/Development/Embedded/command_architecture/Guards/HasCredit.h
+
+/Users/sammottley/Development/Embedded/command_architecture/Guards/HasCredit.h
+Guard.h
+/Users/sammottley/Development/Embedded/command_architecture/Guards/Guard.h
+
+/Users/sammottley/Development/Embedded/command_architecture/Guards/NotLocked.h
+Guard.h
+/Users/sammottley/Development/Embedded/command_architecture/Guards/Guard.h
+
+/Users/sammottley/Development/Embedded/command_architecture/Guards/NotSealed.h
+Guard.h
+/Users/sammottley/Development/Embedded/command_architecture/Guards/Guard.h
+../Storage.h
+/Users/sammottley/Development/Embedded/command_architecture/Storage.h
+
+/Users/sammottley/Development/Embedded/command_architecture/Storage.h
+
 /Users/sammottley/Development/Embedded/command_architecture/Tools/GetAny.h
 any
 -
@@ -125,6 +155,10 @@ Communications/LoRa.h
 /Users/sammottley/Development/Embedded/command_architecture/Communications/LoRa.h
 Communications/Serial.h
 /Users/sammottley/Development/Embedded/command_architecture/Communications/Serial.h
+Guards/GuardsInit.h
+/Users/sammottley/Development/Embedded/command_architecture/Guards/GuardsInit.h
+Storage.h
+/Users/sammottley/Development/Embedded/command_architecture/Storage.h
 Commands/Directory.h
 /Users/sammottley/Development/Embedded/command_architecture/Commands/Directory.h
 
