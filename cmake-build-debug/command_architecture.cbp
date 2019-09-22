@@ -89,16 +89,10 @@
 		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Commands/Contract.h">
 			<Option target="command_architecture"/>
 		</Unit>
-		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Commands/CreditControl.h">
-			<Option target="command_architecture"/>
-		</Unit>
 		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Commands/Directory.h">
 			<Option target="command_architecture"/>
 		</Unit>
-		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Commands/Radio.h">
-			<Option target="command_architecture"/>
-		</Unit>
-		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Commands/Relay.h">
+		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Commands/Methods/Radio.h">
 			<Option target="command_architecture"/>
 		</Unit>
 		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Communications/Communication.h">
@@ -114,12 +108,6 @@
 			<Option target="command_architecture"/>
 		</Unit>
 		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Guards/GuardsInit.h">
-			<Option target="command_architecture"/>
-		</Unit>
-		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Guards/HasCredit.h">
-			<Option target="command_architecture"/>
-		</Unit>
-		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Guards/NotLocked.h">
 			<Option target="command_architecture"/>
 		</Unit>
 		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Guards/NotSealed.h">

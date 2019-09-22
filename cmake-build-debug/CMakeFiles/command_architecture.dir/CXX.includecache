@@ -35,19 +35,19 @@ Contract.h
 /Users/sammottley/Development/Embedded/command_architecture/Commands/Contract.h
 CommandList.h
 /Users/sammottley/Development/Embedded/command_architecture/Commands/CommandList.h
-Radio.h
-/Users/sammottley/Development/Embedded/command_architecture/Commands/Radio.h
+Methods/Radio.h
+/Users/sammottley/Development/Embedded/command_architecture/Commands/Methods/Radio.h
 
-/Users/sammottley/Development/Embedded/command_architecture/Commands/Radio.h
+/Users/sammottley/Development/Embedded/command_architecture/Commands/Methods/Radio.h
 iostream
 -
-Command.h
+../Command.h
 /Users/sammottley/Development/Embedded/command_architecture/Commands/Command.h
-Contract.h
+../Contract.h
 /Users/sammottley/Development/Embedded/command_architecture/Commands/Contract.h
-../Validators/Range.h
+../../Validators/Range.h
 /Users/sammottley/Development/Embedded/command_architecture/Validators/Range.h
-../Guards/NotSealed.h
+../../Guards/NotSealed.h
 /Users/sammottley/Development/Embedded/command_architecture/Guards/NotSealed.h
 
 /Users/sammottley/Development/Embedded/command_architecture/Communications/Communication.h
@@ -99,18 +99,6 @@ Communication.h
 /Users/sammottley/Development/Embedded/command_architecture/Storage.h
 NotSealed.h
 /Users/sammottley/Development/Embedded/command_architecture/Guards/NotSealed.h
-NotLocked.h
-/Users/sammottley/Development/Embedded/command_architecture/Guards/NotLocked.h
-HasCredit.h
-/Users/sammottley/Development/Embedded/command_architecture/Guards/HasCredit.h
-
-/Users/sammottley/Development/Embedded/command_architecture/Guards/HasCredit.h
-Guard.h
-/Users/sammottley/Development/Embedded/command_architecture/Guards/Guard.h
-
-/Users/sammottley/Development/Embedded/command_architecture/Guards/NotLocked.h
-Guard.h
-/Users/sammottley/Development/Embedded/command_architecture/Guards/Guard.h
 
 /Users/sammottley/Development/Embedded/command_architecture/Guards/NotSealed.h
 Guard.h

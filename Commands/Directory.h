@@ -6,7 +6,7 @@
 
 #include "CommandList.h"
 
-#include "Radio.h"
+#include "Methods/Radio.h"
 
 namespace Commands
 {
@@ -26,14 +26,6 @@ namespace Commands
                 {
                     case List::SetFrequency:
                         return m_radio.setFrequency(contract);
-                    case List::SetRelay:
-                        return false;
-                    case List::GetRelay:
-                        return false;
-                    case List::enableCredit:
-                        return false;
-                    case List::AddCredit:
-                        return false;
                     default:
                         return false;
                 }
@@ -41,7 +33,7 @@ namespace Commands
 
 
         private:
-            Radio m_radio;
+            Methods::Radio m_radio;
 
     };
 }

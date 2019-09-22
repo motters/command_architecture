@@ -2,14 +2,14 @@
 
 #include <iostream>
 
-#include "Command.h"
-#include "Contract.h"
+#include "../Command.h"
+#include "../Contract.h"
 
-#include "../Validators/Range.h"
+#include "../../Validators/Range.h"
 
-#include "../Guards/NotSealed.h"
+#include "../../Guards/NotSealed.h"
 
-namespace Commands
+namespace Commands { namespace Methods
 {
     class Radio : Command
     {
@@ -47,4 +47,4 @@ namespace Commands
             }
 
     };
-}
+}}

@@ -5,14 +5,12 @@ CMakeFiles/command_architecture.dir/main.cpp.o: ../Commands/Command.h
 CMakeFiles/command_architecture.dir/main.cpp.o: ../Commands/CommandList.h
 CMakeFiles/command_architecture.dir/main.cpp.o: ../Commands/Contract.h
 CMakeFiles/command_architecture.dir/main.cpp.o: ../Commands/Directory.h
-CMakeFiles/command_architecture.dir/main.cpp.o: ../Commands/Radio.h
+CMakeFiles/command_architecture.dir/main.cpp.o: ../Commands/Methods/Radio.h
 CMakeFiles/command_architecture.dir/main.cpp.o: ../Communications/Communication.h
 CMakeFiles/command_architecture.dir/main.cpp.o: ../Communications/LoRa.h
 CMakeFiles/command_architecture.dir/main.cpp.o: ../Communications/Serial.h
 CMakeFiles/command_architecture.dir/main.cpp.o: ../Guards/Guard.h
 CMakeFiles/command_architecture.dir/main.cpp.o: ../Guards/GuardsInit.h
-CMakeFiles/command_architecture.dir/main.cpp.o: ../Guards/HasCredit.h
-CMakeFiles/command_architecture.dir/main.cpp.o: ../Guards/NotLocked.h
 CMakeFiles/command_architecture.dir/main.cpp.o: ../Guards/NotSealed.h
 CMakeFiles/command_architecture.dir/main.cpp.o: ../Storage.h
 CMakeFiles/command_architecture.dir/main.cpp.o: ../Tools/GetAny.h

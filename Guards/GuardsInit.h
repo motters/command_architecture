@@ -4,8 +4,6 @@
 
 // All guards that require setup
 #include "NotSealed.h"
-#include "NotLocked.h"
-#include "HasCredit.h"
 
 // Definitions
 Storage* Guards::NotSealed::m_storage = nullptr;

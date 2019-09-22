@@ -22,7 +22,6 @@ namespace Communications
             enum class Functions: uint8_t
             {
                 SetFrequency = 'a',
-                SetRelay = 'b'
             };
 
 
@@ -50,9 +49,6 @@ namespace Communications
                 {
                     case Functions::SetFrequency:
                         processCommand(contract, Commands::List::SetFrequency, input, "%c%4,%1", "a%4%1");
-                        break;
-                    case Functions::SetRelay:
-                        processCommand(contract, Commands::List::SetRelay, input, "%c%1", "b%1");
                         break;
                 }
 
