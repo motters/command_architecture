@@ -13,6 +13,13 @@ namespace Commands
     {
         public:
 
+            template <typename ... T, typename ... Args>
+            void response(Contract& contract, Args... A)
+            {
+                contract.commandStatus = true;
+
+                (contract.returns.push_back(std::any_cast<T>(A.value)), ...);
+            }
 
     };
 }

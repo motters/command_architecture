@@ -39,9 +39,7 @@ namespace Commands
                     std::cout << "Setting frequency to: " << frequency.value << " Mode: " << mode.value << std::endl;
 
                     // Data to send back to interface
-                    contract.commandStatus = true;
-                    contract.returns.push_back(std::any_cast<uint32_t>(frequency.value));
-                    contract.returns.push_back(std::any_cast<uint8_t>(mode.value));
+                    response<uint32_t, uint8_t>(contract, frequency, mode);
                 }
 
                 // Return result
