@@ -99,15 +99,14 @@ namespace Communications
                         case 'q':
                         {
                             // Push param over by 1
-                            if(contract.returns.size() > param)
+                            if(contract.returns.size() > param+1)
                             {
-                                auto i = contract.returns.begin();
-                                i += 2;
-                                contract.returns.insert(i, contract.returns.at(param));
+                                swap(contract.returns.at(param), contract.returns.at(param+1));
+                                param--;
                             }
                             else
                             {
-                                return ParseErrors::InvalidDataType;
+                                return ParseErrors::InvalidDataLength;
                             }
                             break;
                         }
