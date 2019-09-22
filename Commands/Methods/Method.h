@@ -3,13 +3,13 @@
 #include <iostream>
 #include <tuple>
 
-#include "Contract.h"
+#include "../Contract.h"
 
-#include "../Tools/GetAny.h"
+#include "../../Tools/GetAny.h"
 
 namespace Commands
 {
-    class Command : public Tools::GetAny
+    class Method : public Tools::GetAny
     {
         public:
 

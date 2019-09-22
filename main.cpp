@@ -33,7 +33,7 @@ void serialTask();
 int main()
 {
     // Welcome message
-    std::cout << "Command Architecture Demo" << std::endl;
+    std::cout << "Method Architecture Demo" << std::endl;
     std::cout << "=========================" << std::endl<< std::endl;
 
     // Setup the setting class

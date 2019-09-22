@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-#include "../Command.h"
+#include "Method.h"
 #include "../Contract.h"
 
 #include "../../Validators/Range.h"
@@ -11,7 +11,7 @@
 
 namespace Commands { namespace Methods
 {
-    class Radio : Command
+    class Radio : Method
     {
         public:
 

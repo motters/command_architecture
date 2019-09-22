@@ -34,7 +34,7 @@ namespace Communications
              */
             virtual Commands::Contract handle(std::string input)
             {
-                // Command contract
+                // Method contract
                 Commands::Contract contract;
 
                 // Has to have atleast a command byte

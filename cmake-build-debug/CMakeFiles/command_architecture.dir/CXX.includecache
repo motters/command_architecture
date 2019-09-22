@@ -6,16 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/sammottley/Development/Embedded/command_architecture/Commands/Command.h
-iostream
--
-tuple
--
-Contract.h
-/Users/sammottley/Development/Embedded/command_architecture/Commands/Contract.h
-../Tools/GetAny.h
-/Users/sammottley/Development/Embedded/command_architecture/Tools/GetAny.h
-
 /Users/sammottley/Development/Embedded/command_architecture/Commands/CommandList.h
 
 /Users/sammottley/Development/Embedded/command_architecture/Commands/Contract.h
@@ -38,11 +28,21 @@ CommandList.h
 Methods/Radio.h
 /Users/sammottley/Development/Embedded/command_architecture/Commands/Methods/Radio.h
 
+/Users/sammottley/Development/Embedded/command_architecture/Commands/Methods/Method.h
+iostream
+-
+tuple
+-
+../Contract.h
+/Users/sammottley/Development/Embedded/command_architecture/Commands/Contract.h
+../../Tools/GetAny.h
+/Users/sammottley/Development/Embedded/command_architecture/Tools/GetAny.h
+
 /Users/sammottley/Development/Embedded/command_architecture/Commands/Methods/Radio.h
 iostream
 -
-../Command.h
-/Users/sammottley/Development/Embedded/command_architecture/Commands/Command.h
+Method.h
+/Users/sammottley/Development/Embedded/command_architecture/Commands/Methods/Method.h
 ../Contract.h
 /Users/sammottley/Development/Embedded/command_architecture/Commands/Contract.h
 ../../Validators/Range.h

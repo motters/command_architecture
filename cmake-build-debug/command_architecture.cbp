@@ -80,9 +80,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Commands/Command.h">
-			<Option target="command_architecture"/>
-		</Unit>
 		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Commands/CommandList.h">
 			<Option target="command_architecture"/>
 		</Unit>
@@ -90,6 +87,9 @@
 			<Option target="command_architecture"/>
 		</Unit>
 		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Commands/Directory.h">
+			<Option target="command_architecture"/>
+		</Unit>
+		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Commands/Methods/Method.h">
 			<Option target="command_architecture"/>
 		</Unit>
 		<Unit filename="/Users/sammottley/Development/Embedded/command_architecture/Commands/Methods/Radio.h">

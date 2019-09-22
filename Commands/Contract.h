@@ -17,7 +17,7 @@ namespace Commands
             // Input string's length was verified
             bool validLength = false;
 
-            // Command from which interface?
+            // Method from which interface?
             enum class AvailableInterfaces
             {
                 Serial,
