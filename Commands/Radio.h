@@ -27,7 +27,7 @@ namespace Commands
                 auto mode = get<uint8_t>(contract.params, 2);
 
                 // If validation passed
-                if( frequency.state && mode.state &&
+                if( parameterValidation(frequency, mode) &&
 
                     // Run guards
                     Guards::NotSealed::validate() &&

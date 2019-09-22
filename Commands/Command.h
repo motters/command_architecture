@@ -21,5 +21,14 @@ namespace Commands
                 (contract.returns.push_back(std::any_cast<T>(A.value)), ...);
             }
 
+            template <typename ... Args>
+            bool parameterValidation(Args... A)
+            {
+                if((A.state, ...))
+                    return true;
+
+                return false;
+            }
+
     };
 }
